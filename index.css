@@ -1,0 +1,626 @@
+
+/* seletor universal */
+* {
+  box-sizing: border-box;
+}
+
+/* box-sizing - content-box */
+/*
+seletor impuro. Seletor de Tag genérica. 
+CSS reset.
+*/
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open-sans", sans-serif;
+}
+body a {
+  text-decoration: none;
+  
+}
+
+body main header ul li {
+  list-style: none;
+  font-family: 'Open-sans' , sans-serif;
+  font-weight: bold;
+
+}
+body main header ul li:hover{
+  border: 10px solid lightseagreen;
+  background-color:lightseagreen ;
+  border-radius: 3px;
+}
+
+
+
+button.show-desktop {
+  width: 200px;
+}
+
+main header.header-top-site {
+  display: flex;
+  width: 100%;
+  height: 80px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 13px 23px;
+  color:#000;
+  z-index: 10;
+  background-color: #000;
+}
+
+.title-logo{
+  margin-left: 3px;
+ 
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Open sans',sans-serif;
+}
+
+
+/* especificidade CSS */
+main header > div#container {
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background:#FFF;
+  padding-left: auto;
+}
+
+main header > div#container > div {
+  display: flex;
+  align-items: center;
+}
+
+main header > div#container > div > p {
+  
+  font-family: "Open-sans";;
+  font-size: 20px;
+  margin-left:3px;
+}
+
+
+main #hero {
+  width: 100%;
+  background-color:white;
+  margin-top: -80px;
+  padding-top: 80px;
+  top: 0;
+  min-height: 100vh;
+}
+
+main .show-mobile {
+  display: block;
+}
+
+main .show-desktop {
+  display: none;
+}
+
+main #hero p{
+  color: #000;
+}
+
+main #hero h1 {
+  color:#000;
+
+}
+
+main #hero h2 {
+  color: #000;
+  font-weight: 300;
+  text-transform:uppercase;
+  font-size: 0.9em;
+  letter-spacing: 3px;
+  
+}
+
+main #hero h1 {
+  font-size: 3.5em;
+  font-family: "Open-sans",sans-serif;
+  font-weight: 900;
+  margin: 0;
+}
+
+main #hero p {
+  letter-spacing: 1px;
+  line-height: 2em;
+}
+
+main #hero {
+  padding: 90px 5% 5% 5%;
+}
+
+main #hero .button-group {
+  display: flex;
+  justify-content: space-between;
+  padding: 2%;
+}
+
+main #hero .button-group button {
+  min-width: 150px;
+  min-height: 50px;
+  background: none;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  color: #000;
+  background-color: lightseagreen;
+  
+
+}
+main #hero .button-group button:hover{
+  transform: scale(1.05);
+}
+
+/* pseudo seletor. : significa um seletor condicional */
+main #hero .button-group button:first-child {
+  background-color: lightseagreen;
+  font-size: 1em;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 800;
+}
+
+main #hero .modern-studio .modern-studio-star {
+  position: absolute;
+}
+
+main #about-us {
+  padding-top: 47px;
+  padding-bottom: 90px;
+  background-color:rgb(22, 151, 190) ;
+}
+
+
+main #about-us .about-section {
+  /* border-top: 1px solid;
+  padding-top: 70px;
+  border-top-color: #F3D1BF; */
+  display: flex;
+  flex-direction: column;
+}
+
+
+main .section-title {
+  color: #000;
+  font-weight: 900;
+  font-size: 2.5em;
+  font-family: 'Open-sans',sans-serif;
+}
+
+main .section-description {
+  color: rgba(57, 20, 0, 0.3960784314);
+  font-size: 1em;
+  line-height: 30px;
+}
+
+main #about-us .about-description > h3 {
+  color: #391400;
+  font-size: 1.3em;
+  font-weight: 400;
+}
+
+main .button-link {
+  width: 138px;
+  height: 48px;
+  background-color: #FFF;
+  color: #000;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  font-family: 'open-sans',sans-serif;
+
+}
+
+
+
+main .about-description .button-link {
+  margin-top: 30px;
+ 
+}
+
+main #about-us .features {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+ 
+  
+  
+}
+
+main #about-us .features .features-items {
+  padding: 0;
+}
+
+
+
+.features-items-li {
+  background: url("/assets/images/checkbox-circle-line.svg") no-repeat;
+  list-style: none;
+  margin: 0;
+  vertical-align: middle;
+  padding: 10px 0 15px 50px;
+  margin-bottom: 15px;
+  font-family: 'Open sans',sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+  
+}
+
+.colaboradores{
+  background: rgb(22, 151, 190);
+  margin-bottom: 0;
+}
+
+.container-colaboradores{
+  max-width: 1800px;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5em;
+}
+
+.colaboradores-title{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap:2em;
+  font-family: 'Open sans',sans-serif;
+  font-size: 22px;
+  color: #000;
+  font-weight: bold;
+  
+}
+
+.colaboradores-flex{
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap:3em;
+ 
+}
+
+.colaboradores-img{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1em;
+  width: 100%;
+  border: solid 5px #FFF;
+  border-radius: 5px;
+  background-color: #FFF;
+  border-color:#000;
+}
+
+.colaboradores-img:hover{
+  transform: scale(1.05);
+}
+/* breakpoints - ponto de mudança com cada device */
+/* desta linha para cima é resolução menor que 576px */
+/* medida css e medida do dispositivo */
+/* Landscape mode */
+/* Tablets e desktop antigos - chromebook */
+@media (min-width: 768px) {
+  main .show-mobile {
+    display: none;
+  }
+.colaboradores-flex{
+  flex-direction: row;
+}
+  main .show-desktop {
+    display: block;
+  }
+
+  main header > #container nav ul {
+    display: flex;
+  }
+
+  main header > #container nav ul li {
+    margin-left: 30px;
+  }
+
+  main header > #container nav a {
+    color: #000;
+  }
+
+  main header > #container > a {
+    background-color: unset;
+    width: 140px;
+    height: 48px;
+    color: white;
+    font-weight: 900;
+    text-transform: uppercase;
+    border: 1px solid rgba(255, 255, 255, 0.1882352941);
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  main #hero .banner {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin: 5% 8%;
+  }
+
+  main #hero .modern-studio {
+    width: 60%;
+  }
+
+  main #hero picture {
+    width: 40%;
+  }
+
+  main #hero .modern-studio .modern-studio-star {
+    position: absolute;
+    top: 13vw;
+    left: 30vw;
+    z-index: 0;
+  }
+
+  main #hero .modern-studio h1 {
+    position: relative;
+    margin: 10% 0;
+    z-index: 2;
+  }
+
+  main #hero .button-group {
+    justify-content: flex-start;
+    margin-top: 10%;
+  }
+
+  main #hero .button-group button:nth-child(2) {
+    margin-left: 5%;
+    font-size: 1.2em;
+  }
+
+  main #about-us .about-section {
+    flex-direction: row;
+  }
+
+  main #about-us .features {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  main #about-us .about-section .about-description,
+main #about-us .features .about-description {
+    margin-left: 50px;
+  }
+}
+
+
+
+footer{
+  margin-top: 0px;
+  background-color:#FFF ;
+  padding: 2em;
+  display: flex;
+  justify-content: center;
+  gap: 4em;
+}
+
+
+@media (min-width: 768px) {
+  
+}
+/* Maioria dos Desktops */
+@media (min-width: 960px) {
+  main #hero .modern-studio {
+    width: 40%;
+  }
+
+  main #hero .modern-studio h1 {
+    font-size: 4em;
+  }
+
+  main #hero picture {
+    width: initial;
+  }
+
+  main #about-us .clients img {
+    margin-bottom: unset;
+  }
+
+  main #about-us .clients img:nth-child(5) {
+    margin: initial;
+  }
+}
+/* Notebooks e telas full HD ou superior */
+@media (min-width: 1200px) {
+  main #hero .modern-studio {
+    width: 45%;
+  }
+
+  main #hero .modern-studio h1 {
+    font-size: 4.5em;
+  }
+
+  main #about-us > div {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+.colaboradores-flex{
+  display: flex;
+margin-bottom: 5em;
+}
+
+
+
+/* Extralarge - Ex: Ultrawide, iMacPro ou telas acima de 23" */
+
+
+
+.qual-perfil {
+    padding-top: 30px;
+    margin-bottom: 2em;
+    
+}
+
+
+#perfis {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: flex-end;
+    margin-bottom: 30px;
+}
+
+#perfis h3 {
+    padding: 9%;
+    padding-bottom: 1rem;
+    font-family: 'Open sans',sans-serif;
+    font-weight: 900;
+    font-size: 25px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.1px;
+    color:#000;
+}
+
+.frase-investidor {
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    max-width: 280px;
+    margin: auto;
+    color: lightseagreen;
+}
+
+.perfil,
+.moderado {
+    border: 2px solid lightseagreen;
+    width: 330px;
+    height: 440px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    position: relative;
+    transition: .6s ease all;
+}
+
+.perfil:hover,
+.moderado:hover {
+    transform: scale(1.05);
+}
+
+.moderado {
+    height: 490px;
+}
+
+.caracteristicas {
+    padding: 5%;
+    padding-top: 1.5rem;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.3px;
+    color: lightseagreen;
+}
+
+.moderado > .caracteristicas {
+    padding-top: 3.5rem;
+}
+
+.check {
+    display: flex;
+    margin-bottom: .75rem;
+    align-items: flex-start;
+}
+.check img {
+    margin-right: .5rem;
+}
+
+
+
+
+.qual-perfil {
+    margin-top: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.qual-perfil .secao__titulo {
+    margin-bottom: 1rem;
+    
+}
+
+.secao__titulo{
+ 
+  color: lightseagreen;
+  text-transform: uppercase;
+  font-family: "Open-sans",sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+    .perfil__descricao {
+        text-align: center;
+    }
+
+    .quizz-duvida {
+        font-size: 22px;
+    }
+
+    #perfis {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .perfil,
+    .moderado {
+        margin: 1.5rem 0;
+        height: auto;
+        padding-bottom: 80px;
+        max-width: 300px;
+    }
+
+    .quizz-botao {
+        width: 206px;
+        height: 54px;
+        font-size: 16px;
+    }
+
+    .saibamais-bottao {
+        width: 120px;
+        height: 42px;
+        font-size: 13px;
+    }
+
+    .check > p,
+    .frase-investidor {
+        font-size: 12px;
+        font-weight: 700;
+    }
+
+    .caracteristicas {
+        padding-top: 1.5rem;
+    }
+
+    .quizz-duvida {
+        margin-top: 3rem;
+    }
+
+    .qual-perfil {
+        margin-bottom: 1rem;
+        padding-top: 0;
+    }
+
+    #perfis {
+        gap: .5rem;
+    }
+  
+  }
